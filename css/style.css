@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1e003c, #3b0a45);
+  font-family: "Jost", sans-serif;
+  background: url("./assets/images.png");
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100;
+    max-width: 560px;
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e0d0d0;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px 17px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: rgba(255, 194, 120, 0.6);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+#todo-input::placeholder {
+  color: #ffffff; 
+  opacity: 0.9;
+}
+
+#date-input {
+  flex: 1;
+  padding: 10px 17px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: rgba(255, 194, 120, 0.6);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+#todo-input {
+  flex: 1;
+}
+
+#date-input {
+  width: 130px;
+}
+
+#date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(1) sepia(0) saturate(10000%) hue-rotate(180deg);
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+#date-input::-webkit-calendar-picker-indicator:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+#todo-form button {
+  background-color: #6c63ff;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 0.8rem;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#todo-form button:hover {
+  transform: scale(1.1);
+  background-color: #5548e5;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+#filter-btn {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+#filter-btn:hover {
+  transform: scale(1.1);
+  background-color: #5548e5;
+}
+
+#delete-all {
+  background-color: #ff4b5c;
+  color: #fff;
+}
+
+#delete-all:hover {
+  transform: scale(1.1);
+  background-color: #e13b4a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: 
+#240c55;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background-color: #5548e5;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+td {
+  border-top: 1px solid hsl(244, 100%, 92%);
+  font-size: 0.85rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0; 
+  padding: 3rem 0;
+  background: transparent; 
+}
+
+
+.empty {
+  color: #ffffff;
+  font-style: italic;
+}

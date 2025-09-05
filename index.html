@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List (RevoU Mini Project) </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+  </head>
+<body>
+    <div class="container">
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Add a todo..." required>
+    <input type="date" id="date-input" required>
+    <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+    </form>
+    <div class="actions">
+    <button id="filter-btn">Sort <i class="fa-solid fa-arrow-up-wide-short"></i></button>
+    <button id="delete-all">Wipe All <i class="fa-solid fa-trash"></i></button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4" class="empty">No task added yet</td></tr>
+      </tbody>
+    </table>
+  </div>
+    <ul id="todo-list"></ul>
+  </div>
+  <footer>
+    <p>© 2025 Rico's Todo List</p>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
